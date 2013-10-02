@@ -1,10 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>DdsFestivalDeRock_Grupo5</groupId>
-	<artifactId>DdsFestivalDeRock_Grupo5</artifactId>
-	<version>1.0-SNAPSHOT</version>
-
+	<groupId>DdsFestivalDeRock_Grupo5_Vista</groupId>
+	<artifactId>DdsFestivalDeRock_Grupo5_Vista</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<parent>
 		<groupId>uqbar</groupId>
 		<artifactId>arena-parent</artifactId>
@@ -12,18 +11,23 @@
 	</parent>
 
 	<dependencies>
-		<!-- UQBAR -->
+		<!-- /UQBAR -->
 		<dependency>
 			<groupId>org.uqbar-project</groupId>
-			<artifactId>uqbar-domain</artifactId>
-			<version>3.3</version>
+			<artifactId>arena-jface</artifactId>
+			<version>3.3-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>DdsFestivalDeRock_Grupo5</groupId>
+			<artifactId>DdsFestivalDeRock_Grupo5</artifactId>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<!-- /UQBAR -->
 
 		<dependency>
 			<groupId>org.codehaus.groovy</groupId>
 			<artifactId>groovy-all</artifactId>
-			<version>2.1.5</version>
+			<version>2.0.7</version>
 		</dependency>
 
 		<dependency>

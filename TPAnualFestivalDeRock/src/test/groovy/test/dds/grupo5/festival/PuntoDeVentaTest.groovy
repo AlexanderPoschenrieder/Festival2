@@ -18,7 +18,6 @@ import dds.grupo5.festival.modelo.negocio.Administracion
 import dds.grupo5.festival.modelo.negocio.Entrada
 import dds.grupo5.festival.modelo.negocio.EntradaComun
 import dds.grupo5.festival.modelo.negocio.PuntoDeVenta
-import dds.grupo5.festival.modelo.negocio.Venta
 
 class PuntoDeVentaTest {
 	
@@ -28,7 +27,6 @@ class PuntoDeVentaTest {
 	Entrada entrada1,entrada2,entrada3,entrada4
 	Cliente unCliente
 	PuntoDeVenta unPuntoDeVenta
-	Venta unaVenta, otraVenta
 
 	Noche noche1
 	Ubicacion ubLibre1,ubLibre2,ubOcupada1,ubOcupada2
@@ -82,14 +80,16 @@ class PuntoDeVentaTest {
 		//Instancio el PuntoDeventa
 		unPuntoDeVenta = new PuntoDeVenta(1,1,festival,admin)
 		
-		//Instancio entradas
-		entrada1 = new EntradaComun(ubLibre1,noche1)
-		entrada2 = new EntradaComun(ubLibre2,noche1)
-		entrada3 = new EntradaComun(ubOcupada1,noche1)
-		entrada4 = new EntradaComun(ubOcupada2,noche1)
-		
 		//Instancio el cliente
-		unCliente = new Cliente("Juan", "Carlos", 29)		
+		unCliente = new Cliente("Juan", "Carlos", 29)
+		
+		//Instancio entradas
+		entrada1 = new EntradaComun(ubLibre1,noche1,festival,unCliente)
+		entrada2 = new EntradaComun(ubLibre2,noche1,festival,unCliente)
+		entrada3 = new EntradaComun(ubOcupada1,noche1,festival,unCliente)
+		entrada4 = new EntradaComun(ubOcupada2,noche1,festival,unCliente)
+		
+		
 	}
 	
 	@Ignore
